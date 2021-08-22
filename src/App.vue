@@ -107,7 +107,7 @@ export default {
 
   data: () => ({
     drawer: false,
-    cart: true,
+    cart: false,
     items: [
       { title: 'Home', icon: 'mdi-home', to: '/' },
       { title: 'Drinks', icon: 'mdi-glass-cocktail', to: '/drinks' },
