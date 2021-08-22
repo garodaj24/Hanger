@@ -77,11 +77,11 @@
 
       <v-spacer></v-spacer>
 
-      <!-- <div id="nav" class="d-none d-md-flex">
+      <div id="nav" class="d-none d-md-flex">
         <router-link class="text-decoration-none" to="/">Home</router-link>
         <router-link class="text-decoration-none" to="/drinks">Drinks</router-link>
         <router-link class="text-decoration-none" to="/about">About</router-link>
-      </div> -->
+      </div>
       <v-btn icon @click="cart = true" class="mr-1">
         <v-badge
           color="red"
