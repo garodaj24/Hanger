@@ -38,7 +38,11 @@
       <span class="display-1 font-weight-bold">Total:</span>
       <span class="display-1 font-weight-bold">{{ totalPrice }}$</span>
     </div>
-    <v-btn class="my-5" :disabled="totalItems === 0">
+    <v-btn 
+      class="my-5"
+      to="/order"
+      :disabled="totalItems === 0"
+    >
       Order
     </v-btn>
   </div>
