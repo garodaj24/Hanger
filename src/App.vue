@@ -4,7 +4,6 @@
       v-model="drawer"
       app
       temporary
-      absolute
       class="orange lighten-4"
     >
       <v-list-item>
@@ -45,7 +44,6 @@
       v-model="cart"
       app
       temporary
-      absolute
       right
       :width="300"
       class="orange lighten-4"
@@ -60,7 +58,7 @@
 
       <v-divider></v-divider>
 
-      Test
+      <cart-items />
     </v-navigation-drawer>
 
     <v-app-bar
@@ -84,11 +82,13 @@
       </div>
       <v-btn icon @click="cart = true" class="mr-1">
         <v-badge
+          v-if="totalItems > 0"
           color="red"
-          content="6"
+          :content="totalItems"
         >
           <v-icon>mdi-cart</v-icon>
         </v-badge>
+        <v-icon v-else>mdi-cart</v-icon>
       </v-btn>
 
     </v-app-bar>
@@ -102,8 +102,14 @@
 </template>
 
 <script>
+import CartItems from './components/CartItems.vue'
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'App',
+  components: {
+    CartItems
+  },
 
   data: () => ({
     drawer: false,
@@ -114,6 +120,13 @@ export default {
       { title: 'About', icon: 'mdi-information', to: '/about' },
     ],
   }),
+
+  computed: {
+    ...mapGetters({
+      cartItems: 'getCartItems',
+      totalItems: 'getTotalItems'
+    })
+  }
 };
 </script>
 
@@ -138,5 +151,26 @@ export default {
       color: red;
     }
   }
+}
+
+.total-price {
+  width: 250px;
+}
+
+.close-button{
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 10;
+}
+
+.single-drink-total {
+  width: 100px;
+  text-align: end;
+}
+
+.single-drink-number {
+  width: 20px;
+  text-align: center;
 }
 </style>
