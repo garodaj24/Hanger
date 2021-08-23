@@ -1,4 +1,4 @@
-# fashion
+# hanger
 
 ## Project setup
 ```
