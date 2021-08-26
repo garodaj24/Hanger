@@ -9,7 +9,7 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
-            Hanger
+            Bingpot
           </v-list-item-title>
           <v-list-item-subtitle>
             Best Drinks Ever
@@ -70,7 +70,7 @@
       <v-app-bar-nav-icon @click="drawer = true" class="d-md-none"></v-app-bar-nav-icon>
 
       <v-toolbar-title class="display-1 font-weight-bold" to="/">
-        <router-link class="text-decoration-none black--text" to="/">Hanger</router-link>
+        <router-link class="text-decoration-none black--text" to="/">Bingpot</router-link>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -135,7 +135,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 #nav {
@@ -172,5 +171,12 @@ export default {
 .single-drink-number {
   width: 20px;
   text-align: center;
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
