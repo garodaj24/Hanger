@@ -52,11 +52,11 @@
     <div
       class="black white--text footer"
     >
-      <span>Copyright &copy; 2021 Bingpot</span>
-      <v-btn icon target="_blank" href="https://www.google.com" class="ml-5">
+      <span>Copyright &copy; 2021 Khmichk</span>
+      <v-btn icon target="_blank" href="https://www.instagram.com" class="ml-5">
         <v-icon large color="orange">mdi-instagram</v-icon>
       </v-btn>
-      <v-btn icon class="ml-5">
+      <v-btn icon target="_blank" href="https://www.facebook.com" class="ml-5">
         <v-icon large color="orange">mdi-facebook</v-icon>
       </v-btn>
     </div>

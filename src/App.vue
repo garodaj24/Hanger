@@ -9,7 +9,7 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
-            Bingpot
+            Khmichk
           </v-list-item-title>
           <v-list-item-subtitle>
             Best Drinks Ever
@@ -70,7 +70,7 @@
       <v-app-bar-nav-icon @click="drawer = true" class="d-md-none"></v-app-bar-nav-icon>
 
       <v-toolbar-title class="display-1 font-weight-bold" to="/">
-        <router-link class="text-decoration-none black--text" to="/">Bingpot</router-link>
+        <router-link class="text-decoration-none black--text" to="/">Khmichk</router-link>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
